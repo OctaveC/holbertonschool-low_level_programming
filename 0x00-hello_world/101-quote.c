@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include <unistd.h>
+#include<unistd.h>
 /**
- * my_function - This is a function that takes no argument, so it is void
+ * main - This is a function that takes no argument, so it is void
  *
  * Return: This returns 1
  */
