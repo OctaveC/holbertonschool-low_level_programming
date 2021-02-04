@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - this function doesn't take an arguement
  *
  * Return: This function returns 0
