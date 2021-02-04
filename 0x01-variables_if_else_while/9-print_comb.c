@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- * main - this function will put the characters a through z using the charfunct
+ * main - this function will put the numbers 0 through 9 followed by comas
  *
  * Return: This returns zero
  */
 int main(void)
 {
-	char num = '0';
+	int num = '0';
 
 	for (num = '0' ; num <= '9' ; num++)
 	{
