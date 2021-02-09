@@ -6,7 +6,7 @@
  *
  * Return: 0
  */
-void main(void)
+int main(void)
 {
 	long int i, n = 50, t1 = 1, t2 = 2, nextTerm;
 
@@ -25,4 +25,5 @@ void main(void)
 		t2 = nextTerm;
 	}
 	putchar('\n');
+	return (0);
 }

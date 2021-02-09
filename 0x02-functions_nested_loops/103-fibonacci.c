@@ -17,4 +17,5 @@ int main(void)
 		t2 = nextTerm;
 	}
 	printf("%li\n", tot);
+	return (0);
 }

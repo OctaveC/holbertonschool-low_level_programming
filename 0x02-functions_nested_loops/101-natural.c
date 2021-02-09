@@ -16,4 +16,5 @@ int main(void)
 	tot += num;
 	}
 	printf("%i\n", tot);
+	return (0);
 }

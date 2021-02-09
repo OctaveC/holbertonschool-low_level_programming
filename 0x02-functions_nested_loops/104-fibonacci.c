@@ -6,7 +6,7 @@
  *
  * Return: 0
  */
-void main(void)
+int main(void)
 {
 	unsigned long int i, t1 = 1, t2 = 2, nextTerm;
 
@@ -47,4 +47,5 @@ void main(void)
 /*              ^ equivalent of "t2 = nextTerm" */
 	}
 	putchar('\n');
+	return (0);
 }
