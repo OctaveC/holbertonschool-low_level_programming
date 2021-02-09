@@ -11,7 +11,10 @@ int main(void)
 
 	for (i = 1; i < n; ++i)
 	{
+		if (i % 2 == 0)
+		{
 		tot += t1;
+		}
 		nextTerm = t1 + t2;
 		t1 = t2;
 		t2 = nextTerm;
