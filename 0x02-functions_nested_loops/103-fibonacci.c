@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	long int i, n = 33, t1 = 0, t2 = 1, nextTerm, tot;
+	int i, t1 = 1, t2 = 2, nextTerm, tot;
 
-	for (i = 1; i < n; ++i)
+	for (i = 0; i < 33; ++i)
 	{
-		if (i % 2 == 0)
+		if (t1 % 2 == 0)
 		{
 		tot += t1;
 		}
@@ -19,6 +19,6 @@ int main(void)
 		t1 = t2;
 		t2 = nextTerm;
 	}
-	printf("%li\n", tot);
+	printf("%i\n", tot);
 	return (0);
 }
