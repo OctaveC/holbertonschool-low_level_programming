@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * times_table - print times table for n
- *
+ * print_times_table - print times table for n
+ * @n: an int
  *
  * Return: 0
  */
