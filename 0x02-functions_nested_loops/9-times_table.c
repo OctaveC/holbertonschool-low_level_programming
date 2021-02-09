@@ -16,39 +16,29 @@ void times_table(void)
 		{
 			m = t * p;
 			if ((p == 9) && (m <= 9))
-			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(m + '0');
 				_putchar('\n');
-			}
 			else if ((p == 9) && (m > 9))
-			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(m / 10 + '0');
 				_putchar(m % 10 + '0');
 				_putchar('\n');
-			}
 			else if (p == 0)
-			{
 				_putchar(p + '0');
-			}
 			else if (m <= 9)
-			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(m + '0');
-			}
 			else if (m > 9)
-			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(m / 10 + '0');
 				_putchar(m % 10 + '0');
-			}
 		}
 	}
 }
