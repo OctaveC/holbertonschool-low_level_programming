@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 /**
  * main - prints 'Holberton'
  *
@@ -7,15 +7,15 @@
 
 int main(void)
 {
-	_putchar.c('H')
-	_putchar.c('o');
-	_putchar.c('l');
-	_putchar.c('b');
-	_putchar.c('e');
-	_putchar.c('r');
-	_putchar.c('t');
-	_putchar.c('o');
-	_putchar.c('n');
-	_putchar.c('\n');
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 	return (0);
 }

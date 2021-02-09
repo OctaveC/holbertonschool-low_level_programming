@@ -8,11 +8,18 @@
  */
 void main(void)
 {
-	long int i, n = 50, t1 = 0, t2 = 1, nextTerm;
+	long int i, n = 50, t1 = 1, t2 = 2, nextTerm;
 
 	for (i = 1; i <= n; ++i)
 	{
-		printf("%li, ", t1);
+		if (i == 1)
+		{
+		printf("%li", t1);
+		}
+		else
+		{
+		printf(", %li", t1);
+		}
 		nextTerm = t1 + t2;
 		t1 = t2;
 		t2 = nextTerm;
