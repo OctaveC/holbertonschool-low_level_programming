@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * _isalpha - it returns 1 if it's a letter, 0 otherwise
@@ -6,7 +6,7 @@
  *
  * Return: 0 or 1.
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 
 	if ((c >= 97) && (c <= 122))

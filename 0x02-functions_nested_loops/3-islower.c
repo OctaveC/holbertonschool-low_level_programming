@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * _islower - print the alphabet ten times
@@ -6,7 +6,7 @@
  *
  * Return: 0.
  */
-int _islower(int c);
+int _islower(int c)
 {
 
 	if ((c >= 97) && (c <= 122))

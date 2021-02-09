@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * print_alphabet - what could it possibly do?
@@ -7,13 +7,12 @@
  */
 void print_alphabet(void)
 {
-	int let = a;
+	int let = 'a';
 
-	while let <= z;
+	while (let <= 'z')
 	{
-		_putchar(let);
-		let++;
+	_putchar(let);
+	let++;
 	}
 	_putchar('\n');
-	return (0);
 }

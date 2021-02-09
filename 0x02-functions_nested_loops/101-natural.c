@@ -11,9 +11,9 @@ int main(void)
 	int num, tot = 0;
 
 	for (num = 0; num < 1024; num++)
-		{
-			if (num % 3 == 0 && num % 5 == 0)
-				tot += num;
-		}
+	{
+	if (num % 3 == 0 && num % 5 == 0)
+	tot1 += num;
+	}
 	printf("%i\n", tot);
 }

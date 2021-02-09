@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * print_sign - return 1=positive, return 0=0, return -1=negative
@@ -6,7 +6,7 @@
  *
  * Return: 0,1 or -1
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 
 	if (n > 0)
