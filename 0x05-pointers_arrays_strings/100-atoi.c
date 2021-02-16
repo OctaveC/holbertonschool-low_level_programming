@@ -20,7 +20,7 @@ int _atoi(char *s)
 		ite1++;
 	}
 	ite2 = ite1;
-	while (s[ite2] >= '0' || s[ite2] <= '9')
+	while (s[ite2] >= '0' && s[ite2] <= '9')
 	{
 		num = (num * 10) + (ite2 + '0') * sign;
 		ite2++;
