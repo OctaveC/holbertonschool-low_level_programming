@@ -15,11 +15,10 @@ void puts2(char *str)
 	{
 		if (n % 2 != 0)
 		{
-			n++;
-			continue;
+			n += 1;
 		}
 		_putchar(str[n]);
-		n++;
+		n += 1;
 	}
 	_putchar('\n');
 }
