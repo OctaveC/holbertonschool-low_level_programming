@@ -13,12 +13,11 @@ void puts2(char *str)
 
 	while (str[n] != '\0')
 	{
-		if (n % 2 != 0)
+		if (n % 2 == 0)
 		{
-			n += 1;
+			_putchar(str[n]);
 		}
-		_putchar(str[n]);
-		n += 1;
+		n++;
 	}
 	_putchar('\n');
 }
