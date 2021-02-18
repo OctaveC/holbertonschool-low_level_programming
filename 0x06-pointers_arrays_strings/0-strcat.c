@@ -21,7 +21,7 @@ char *_strcat(char *dest, char *src)
 	{
 		*dest = *src;
 /* on est au début de la string src, et à la fin de la string dest */
-/* ^ l'index actuel de la string dest devient l'index actuel de la string src */
+/* ^l'index actuel de la string dest devient l'index actuel de la string src */
 		src++;
 		dest++;
 	}
