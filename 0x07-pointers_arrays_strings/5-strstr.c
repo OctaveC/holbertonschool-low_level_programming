@@ -11,6 +11,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *hay, *nee;
+
 	hay = haystack;
 	nee = needle;
 
