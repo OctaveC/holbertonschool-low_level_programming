@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-/*
+/**
  * _memset - fill memory with a specific byte.
  * @s: the memory area we poin to
  * @b: the byte we fill the memory with
