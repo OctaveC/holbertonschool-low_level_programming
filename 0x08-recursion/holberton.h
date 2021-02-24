@@ -9,3 +9,4 @@ int attempt(int test1, int test2);
 int is_prime_number(int n);
 int attempt(int num, int a);
 int is_palindrome(char *s);
+int attempt_palin(char *s, int count, int revcount);

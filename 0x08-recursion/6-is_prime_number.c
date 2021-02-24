@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * is_palindrome - Checks if this is a palindrome.
- * @s: We're attempting to find out if this string is a palindrome
+ * is_prime_number - Checks if a number is prime.
+ * @n: We're attempting to find out if this number is prime
  *
- * Return: 1 if palindromic, 0 if not
+ * Return: 1 if prime, 0 if not
  */
-int is_palindrome(char *s)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 	{
