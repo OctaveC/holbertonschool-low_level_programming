@@ -10,6 +10,9 @@
  */
 int wildcmp(char *s1, char *s2)
 {
+	printf( "Here's *s1: %s\n", s1);
+	printf( "Here's *s2: %s\n", s2);
+
 	if (*s1 == '\0' && *s2 == '\0')
 	{
 		return (1);
