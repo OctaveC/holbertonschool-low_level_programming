@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 		result += atoi(argv[ite]);
-		if (atoi(*argv[ite]) <= 0)
+		if (atoi(argv[ite]) <= 0)
 		{
 			printf("Error\n");
 
