@@ -8,7 +8,7 @@
  *
  * Return: 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int result = 0, cents, coin, ite, coins_array[] = {25, 10, 5, 2, 1};
 

@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - Prints name of this program.
- * @argc:
- * @argv:
+ * @argc: Numbers of argumennts
+ * @argv: Array of said arguments
  *
  * Return: 0
  */

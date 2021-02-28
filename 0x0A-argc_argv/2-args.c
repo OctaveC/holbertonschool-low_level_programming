@@ -7,7 +7,7 @@
  *
  * Return: 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int count;
 
@@ -15,5 +15,5 @@ int main (int argc, char *argv[])
 	{
 		printf("%s\n", argv[count]);
 	}
-	return 0;
+	return (0);
 }
