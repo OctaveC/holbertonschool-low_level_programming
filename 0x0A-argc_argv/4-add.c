@@ -15,13 +15,19 @@ int main(int argc, char *argv[])
 
 	for (ite = 1; ite < argc; ite++)
 	{
-		if (isdigit(*argv[ite]) <= 0)
+		if (isdigit(*argv[ite]) == 0)
 		{
 			printf("Error\n");
 
 			return (1);
 		}
 		result += atoi(argv[ite]);
+		if (atoi(*argv[ite]) <= 0)
+		{
+			printf("Error\n");
+
+			return (1);
+		}
 	}
 	printf("%d\n", result);
 	return (0);
