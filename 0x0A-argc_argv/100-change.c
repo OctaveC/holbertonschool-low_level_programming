@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	cents = atoi(argv[1]);
-	if (cents <= 0)
+	if (cents < 1)
 	{
-		printf("0/n");
+		printf("0\n");
 	}
 	else
 	{
