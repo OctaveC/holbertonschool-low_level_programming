@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	for (ite = 1; ite < argc; ite++)
 	{
-		if (isdigit(*argv[ite]) == -1)
+		if (isdigit(*argv[ite]) <= 0)
 		{
 			printf("Error\n");
 
