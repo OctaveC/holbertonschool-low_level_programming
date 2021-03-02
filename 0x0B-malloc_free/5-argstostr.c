@@ -12,13 +12,13 @@
 char *argstostr(int ac, char **av)
 {
 	char *arguments;
-	unsigned int size = 0, ite1, ite2, ite3 = 0;
+	int size = 0, ite1, ite2, ite3 = 0;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	for (ite1 = 0; ite1 < (unsigned int)ac; ite1++)
+	for (ite1 = 0; ite1 < ac; ite1++)
 	{
 		size = size + _strlen(av[ite1]);
 	}
@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 	if (arguments == NULL)
 		return (NULL);
 
-	for (ite1 = 0; (ite1 < (unsigned int)ac); ite1++)
+	for (ite1 = 0; (ite1 < ac); ite1++)
 	{
 		for (ite2 = 0; av[ite1][ite2] != '\0'; ite2++)
 		{
@@ -55,5 +55,5 @@ int _strlen(char *s)
 	{
 		n++;
 	}
-	return (n + 1);
+	return (n + 2);
 }
