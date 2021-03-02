@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _str_concat - Returns a pointer to s1 followed by s2.
+ * str_concat - Returns a pointer to s1 followed by s2.
  * @s1: First string
  * @s2: Second string
  *
