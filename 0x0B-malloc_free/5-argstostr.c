@@ -49,11 +49,11 @@ char *argstostr(int ac, char **av)
  */
 int _strlen(char *s)
 {
-	int n;
+	int n = 0;
 
 	while (s[n] != '\0')
 	{
 		n++;
 	}
-	return (n + 2);
+	return (n + 1);
 }
