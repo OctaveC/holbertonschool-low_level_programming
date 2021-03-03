@@ -31,7 +31,7 @@ char **strtow(char *str)
 
 		word_length = measure_words(str, progress);
 
-		word_array[ite1] = (char *)malloc((word_length + 1) * sizeof(char));
+		word_array[ite1] = malloc((word_length + 1) * sizeof(char));
 		if (word_array[ite1] == NULL)
 		{
 			for (ite3 = 0; ite3 < ite1; ite3++)
