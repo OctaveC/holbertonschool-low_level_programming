@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -9,21 +10,25 @@
  *
  * Return: Nothing
  */
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name,__attribute__ ((unused))float age, char *owner)
 {
-	if (d != NULL)
+	struct dog *new_dog;
+
+	new_dog = malloc(sizeof(struct dog));
+	if (new_dog == NULL)
+	return (NULL);
+
+	new_dog->name = name;
+	if (new_dog->name == NULL)
 	{
-		if (d->name == NULL)
-			printf("Name: (nil)\n");
-		else
-			printf("Name: %s\n", d->name);
-		if (d->age == 0)
-			printf("Age: (nil)\n");
-		else
-			printf("Age: %f\n", d->age);
-		if (d->owner == NULL)
-			printf("Owner: (nil)\n");
-		else
-			printf("Owner: %s\n", d->owner);
+		free(new_dog);
+		return (NULL);
 	}
+	new_dog->owner = owner;
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
+	return (new_dog);
 }
