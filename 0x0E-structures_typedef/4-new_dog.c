@@ -10,7 +10,7 @@
  *
  * Return: Nothing
  */
-dog_t *new_dog(char *name,__attribute__ ((unused))float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *new_dog;
 
@@ -20,6 +20,12 @@ dog_t *new_dog(char *name,__attribute__ ((unused))float age, char *owner)
 
 	new_dog->name = name;
 	if (new_dog->name == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
+	new_dog->age = age;
+	if (new_dog->age == 0)
 	{
 		free(new_dog);
 		return (NULL);
