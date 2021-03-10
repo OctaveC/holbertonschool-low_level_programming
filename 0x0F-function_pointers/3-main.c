@@ -12,7 +12,6 @@
 int main(int argc, char *argv[])
 {
 	int result, x, y;
-	int (*test)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,13 +21,8 @@ int main(int argc, char *argv[])
 
 	x = atoi(argv[1]);
 	y = atoi(argv[3]);
-	test = get_op_func(argv[2]);
-	if (test == NULL)
-	{
-	printf("Error\n");
-	exit(99);
-	}
-	result = test(x, y);
+
+	result = get_op_func(argv[2])(x, y);
 	printf("%d\n", result);
 	return (0);
 }
