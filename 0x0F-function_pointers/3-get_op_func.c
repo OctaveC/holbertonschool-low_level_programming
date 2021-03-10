@@ -18,9 +18,8 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
-	i = 0;
 	while (ops[i].op != NULL)
 	{
 		if (*s == *ops[i].op)
@@ -29,6 +28,5 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
-	printf("Error\n");
-	exit(99);
+	return (NULL);
 }
