@@ -23,12 +23,9 @@ int (*get_op_func(char *s))(int, int)
 
 	while (ops[i].op != NULL)
 	{
-		if (strlen(s) == 1)
+		if (*s == *ops[i].op && strlen(s) == 1)
 		{
-			if (*s == *ops[i].op)
-			{
-				return (ops[i].f);
-			}
+			return (ops[i].f);
 		}
 		i++;
 	}
