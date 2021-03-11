@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include <stddef.h>
 #include "variadic_functions.h"
 
 /**
@@ -17,11 +18,11 @@ void print_all(const char * const format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
+	va_list args;
 	char *separator = "";
 	unsigned int ite1 = 0, ite2 = 0;
-	va_list args;
 
-	va_start (args, format);
+	va_start(args, format);
 	while (format[ite1] != '\0' && format != NULL)
 	{
 		ite2 = 0;
