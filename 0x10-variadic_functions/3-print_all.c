@@ -33,9 +33,9 @@ void print_all(const char * const format, ...)
 				printf("%s", separator);
 				array[ite2].func(args);
 			}
-			separator = ", ";
 			ite2++;
 		}
+		separator = ", ";
 		ite1++;
 	}
 	va_end(args);
