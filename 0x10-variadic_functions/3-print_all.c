@@ -12,11 +12,11 @@
 void print_all(const char * const format, ...)
 {
 	print_t array[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string},
-		{NULL, NULL}
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{'\0', '\0'}
 	};
 	va_list args;
 	char *separator = "";
@@ -26,9 +26,9 @@ void print_all(const char * const format, ...)
 	while (format[ite1] != '\0' && format != NULL)
 	{
 		ite2 = 0;
-		while (array[ite2].p != NULL)
+		while (array[ite2].p != '\0')
 		{
-			if (format[ite1] == array[ite2].p[0])
+			if (format[ite1] == array[ite2].p)
 			{
 				printf("%s", separator);
 				array[ite2].func(args);
