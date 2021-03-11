@@ -17,11 +17,11 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-	va_start (args, n);         /* Initialize the argument list. */
+	va_start(args, n);         /* Initialize the argument list. */
 
 	for (ite = 0; ite < n; ite++)
-		sum += va_arg (args, int);    /* Get the next argument value. */
+		sum += va_arg(args, int);    /* Get the next argument value. */
 
-	va_end (args);                  /* Clean up. */
+	va_end(args);                  /* Clean up. */
 	return sum;
 }
