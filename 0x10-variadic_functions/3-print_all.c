@@ -32,10 +32,11 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				array[ite2].func(args);
+				separator = ", ";
+				break;
 			}
 			ite2++;
 		}
-		separator = ", ";
 		ite1++;
 	}
 	va_end(args);
