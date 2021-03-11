@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_all("fff", 34.4);
+	print_all("fsc", 34.4);
 	return (0);
 }

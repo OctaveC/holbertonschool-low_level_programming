@@ -12,23 +12,23 @@
 void print_all(const char * const format, ...)
 {
 	print_t array[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string},
-		{'\0', '\0'}
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
 	};
 	va_list args;
 	char *separator = "";
 	unsigned int ite1 = 0, ite2 = 0;
 
 	va_start(args, format);
-	while (format[ite1] != '\0' && format != NULL)
+	while (format != NULL && format[ite1] != '\0')
 	{
 		ite2 = 0;
-		while (array[ite2].p != '\0')
+		while (array[ite2].p != NULL)
 		{
-			if (format[ite1] == array[ite2].p)
+			if (format[ite1] == *array[ite2].p)
 			{
 				printf("%s", separator);
 				array[ite2].func(args);
