@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 		ite2 = 0;
 		while (array[ite2].p != NULL)
 		{
-			if (format[ite1] == *(array[ite2]).p)
+			if (format[ite1] == array[ite2].p[0])
 			{
 				printf("%s", separator);
 				array[ite2].func(args);
