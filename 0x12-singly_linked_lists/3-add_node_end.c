@@ -26,7 +26,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	h->str = strdup(str);
 	h->next = NULL;
 	/* if the head is NULL, it is an empty list */
-	if(*head == NULL)
+	if (*head == NULL)
 		*head = h;
 	else
 	{
