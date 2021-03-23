@@ -18,11 +18,11 @@ size_t free_listint_safe(listint_t **h)
 	if (h == NULL || *h == NULL)
 		return (0);
 
-	for (; (loopfla != 1 || *h != check) && *h != NULL; *h = placeholder, count++)
+	for (; (loopfla != 1 || *h != check) && *h != NULL; *h = placeholder)
 	{
+		count++;
 		placeholder = (*h)->next;
-
-		if (*h == check)
+		if (*h == check && loopfla != 1)
 		{
 			if (check == (*h)->next)
 			{
