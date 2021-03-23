@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	check = find_listint_loop((listint_t *)head);
 
-	while ((loopflag != 1 || head != check) && head != NULL )
+	while ((loopflag != 1 || head != check) && head != NULL)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
 		if (head == check)
@@ -29,6 +29,12 @@ size_t print_listint_safe(const listint_t *head)
 	return (count);
 }
 
+/**
+ * find_listint_loop - Finds out if there's a loop in a linked list.
+ * @head: The head of the list we're going to search
+ *
+ * Return: the address of the node where the loop starts or NULL if no loop
+ */
 listint_t *find_listint_loop(listint_t *head)
 {
 
@@ -41,6 +47,8 @@ listint_t *find_listint_loop(listint_t *head)
 
 	while (search1 != NULL)
 	{
+		if (search1 == search1->next)
+			return (search1);
 		for (search2 = head; search2 != search1; search2 = search2->next)
 		{
 			if (search2 == search1->next)
