@@ -10,53 +10,38 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	int count, loopflag = 0;
+	int count = 0, loopfla = 0;
 	listint_t *check = NULL, *placeholder;
 
+	check = find_listint_loop2(*h);
 
 	if (h == NULL || *h == NULL)
 		return (0);
 
-	check = find_listint_loop2(*h);
-/*	while ((loopflag != 0 || *h != check) && *h != NULL) */
-	for (count = 0; (loopflag != 0 || *h != check) && *h != NULL; *h = placeholder)
+	for (; (loopfla != 1 || *h != check) && *h != NULL; *h = placeholder, count++)
 	{
 		placeholder = (*h)->next;
-		/*	if (*h == check && loopflag)
+
+		if (*h == check)
 		{
-			if (check == check->next)
+			if (check == (*h)->next)
 			{
 				free(*h);
 				break;
 			}
 			placeholder = placeholder->next;
-			loopflag = 0;
 			free((*h)->next);
-			break;
-			} */
-		if (*h == check)
-		{
-			/*	if (check == check->next)
-			{
-				free(*h);
-				break;
-				} */
-			/*	free(*h); */
-			/*		break;
+			loopfla = 1;
 			count++;
-			placeholder = placeholder->next;
-			free((*h)->next); */
-			loopflag = 1;
 		}
 		free(*h);
-		count++;
 	}
 	*h = NULL;
 	return (count);
 }
 
 /**
- * find_listint_loop - Finds out if there's a loop in a linked list.
+ * find_listint_loop2 - Finds out if there's a loop in a linked list.
  * @head: The head of the list we're going to search
  *
  * Return: the address of the node where the loop starts or NULL if no loop
