@@ -7,7 +7,7 @@
  *
  * Return: 1 if it worked, or -1 if error
  **/
-int clear_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int placeholder = 1, reverse_placeholder;
 
