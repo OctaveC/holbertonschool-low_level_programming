@@ -21,7 +21,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	/* 1000000000, which is the exact spot we want to modify according to */
 	/* our index */
 
-	reverse_placeholde = ~placeholder;
+	reverse_placeholder = ~placeholder;
 	/* Here, the  bit operation '~' turns all of our 0 into 1 and 1 into 0*/
 	/* Therefore, considering our previous exemple,our reverse_placeholder*/
 	/* is equal to 0111111111*/
