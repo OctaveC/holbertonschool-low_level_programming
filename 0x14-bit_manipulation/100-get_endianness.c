@@ -8,7 +8,8 @@
 int get_endianness(void)
 {
 	unsigned int placeholder = 1;
-	char *check = (char*)&placeholder;
+	char *check = (char *)&placeholder;
+
 	/* ^ Since size of character is 1 byte when the character pointer is */
 	/* de-referenced it will contain only first byte of integer. If */
 	/* machine is little endian then *c will be 1 (because last byte is */
