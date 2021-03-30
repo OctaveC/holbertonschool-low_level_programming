@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * mai, - Copies the content of a file to another file.
+ * main - Copies the content of a file to another file.
  * @argc: Number of arguments
  * @argv: Array containing the arguments
  *
@@ -17,31 +17,31 @@ int main(int argc, char *argv[])
 
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
-		dprintf(2,"Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]), exit(98);
 
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_to == -1)
-		dprintf(2,"Error: Can't write to %s\n", argv[2]), exit(99);
+		dprintf(2, "Error: Can't write to %s\n", argv[2]), exit(99);
 
 	reading = read(file_from, buffer, 1024);
 	if (reading == -1)
-		dprintf(2,"Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]), exit(98);
 
 	while (reading > 0)
 	{
 		writing = write(file_to, buffer, reading);
 		if (writing == -1)
-			dprintf(2,"Error: Can't write to %s\n", argv[2]), exit(99);
+			dprintf(2, "Error: Can't write to %s\n", argv[2]), exit(99);
 		reading = read(file_from, buffer, 1024);
 		if (reading == -1)
-			dprintf(2,"Error: Can't read from file %s\n", argv[1]), exit(98);
+			dprintf(2, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 
 	if (close(file_from) == -1)
-		dprintf(2,"Error: Can't close fd %d\n", file_from), exit(100);
+		dprintf(2, "Error: Can't close fd %d\n", file_from), exit(100);
 
 	if (close(file_to) == -1)
-		dprintf(2,"Error: Can't close fd %d\n", file_to), exit(100);
+		dprintf(2, "Error: Can't close fd %d\n", file_to), exit(100);
 
 	return (0);
 }
