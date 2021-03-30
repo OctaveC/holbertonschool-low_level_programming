@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	head = malloc(sizeof(Elf64_Ehdr));
 	if (!head)
-		dprintf(STDERR_FILENO, "Error: Memory allocation issue %s\n"), exit(98);
+		dprintf(STDERR_FILENO, "Error: Memory allocation issue\n"), exit(98);
 
 	reading = read(opening, head, sizeof(Elf64_Ehdr));
 	if (reading == -1)
