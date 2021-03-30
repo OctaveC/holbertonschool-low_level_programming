@@ -39,11 +39,11 @@ int main(int argc, char *argv[])
 
 	check = close(file_from);
 	if (check < 0)
-		dprintf(2, "Error: Can't close fd %d\n", check), exit(100);
+		dprintf(2, "Error: Can't close fd %d\n", file_from), exit(100);
 
 	check = close(file_to);
 	if (check < 0)
-		dprintf(2, "Error: Can't close fd %d\n", check), exit(100);
+		dprintf(2, "Error: Can't close fd %d\n", file_to), exit(100);
 
 	return (0);
 }
