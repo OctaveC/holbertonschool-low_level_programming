@@ -34,5 +34,6 @@ int main(int argc, char *argv[])
 	check = close(opening);
 	if (check == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", opening), exit(98);
+	printf("placeholder\n");
 	return (0);
 }
