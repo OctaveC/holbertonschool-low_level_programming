@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * get_dnodeint_at_index - Returns the nth node of a dlistint_t doubly linked list.
+ * get_dnodeint_at_index - Returns the nth node of a dlistint_t linked list.
  * @head: The head of the list
  * @index: The specific node we want to return
  *

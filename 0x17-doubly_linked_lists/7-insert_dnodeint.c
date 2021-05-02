@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * insert_dnodeint_at_index - Inserts node at the nth postion in a doubly linked list.
+ * insert_dnodeint_at_index - Inserts node at the nth postion in a linked list.
  * @h: The head of the list
  * @idx: The index of the list where the new node will be added
  * @n: the int we're going to insert into the list
